@@ -1,7 +1,6 @@
 
 import mongoose, {model, Schema} from "mongoose";
 
-//mongoose.connect("mongodb+srv://d0wnfa11:EbsasbuZJrnYKjQ6@cluster0.yeet3.mongodb.net/brain")
 mongoose.connect("mongodb://admin:adminpassword@localhost:27017/brain?authSource=admin")
 
 const UserSchema = new Schema({
