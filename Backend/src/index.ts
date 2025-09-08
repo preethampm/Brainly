@@ -1,7 +1,7 @@
 import express from "express";
 import { random } from "./utils";
 import jwt from "jsonwebtoken";
-import { ContentModel, LinkModel, UserModel } from "./db";
+import { ContentModel, LinkModel, UserModel, TagModel } from "./db";
 import { JWT_SECRET } from "./config";
 import { userMiddleware } from "./middleware";
 import cors from "cors";
@@ -53,8 +53,6 @@ app.post("/api/v1/signin", async (req, res) => {
         })
     }
 })
-
-import { ContentModel, LinkModel, TagModel, UserModel } from "./db";
 
 app.post("/api/v1/content", userMiddleware, async (req, res) => {
     const { link, type, title, tags } = req.body;

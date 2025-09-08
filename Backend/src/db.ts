@@ -1,7 +1,8 @@
 
 import mongoose, {model, Schema} from "mongoose";
 
-mongoose.connect("mongodb://admin:adminpassword@localhost:27017/brain?authSource=admin")
+const mongoHost = process.env.MONGO_HOST || 'localhost';
+mongoose.connect(`mongodb://admin:adminpassword@${mongoHost}:27017/brain?authSource=admin`)
 
 const UserSchema = new Schema({
     username: {type: String, unique: true},
