@@ -3,20 +3,20 @@
 ## Commands
 
 ### Frontend (React + Vite + TypeScript + TailwindCSS)
-```bash
+```cmd
 cd Frontend
-bun run dev      # Start dev server
-bun run build    # Production build
-bun run lint     # ESLint check
-bun run preview  # Preview production build
+bun run dev
+bun run build
+bun run lint
+bun run preview
 ```
 
 ### Backend (Express + TypeScript)
-```bash
+```cmd
 cd Backend
-bun run dev      # Build + start (tsc -b && node dest/index.js)
-bun run build    # TypeScript build (tsc -b)
-bun run start    # Run compiled (node dest/index.js)
+bun run dev
+bun run build
+bun run start
 ```
 
 ### Single Test
