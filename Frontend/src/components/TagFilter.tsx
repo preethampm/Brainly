@@ -28,7 +28,7 @@ export function TagFilter({ onChange }: { onChange: (tags: string[]) => void }) 
         <div className="flex flex-wrap gap-2 mb-8">
             {tags.map(tag => (
                 <button
-                    key={tag._id}
+                    key={tag.id}
                     onClick={() => handleTagClick(tag)}
                     className={`px-3 py-1 rounded-full text-sm font-medium transition-colors duration-200 ${
                         selectedTags.includes(tag.name)

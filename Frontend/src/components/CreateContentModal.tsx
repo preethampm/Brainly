@@ -11,7 +11,7 @@ export function CreateContentModal({ onClose, refresh }: { onClose: () => void; 
     const [tags, setTags] = useState<any[]>([]);
 
     const handleDelete = (i: number) => {
-        setTags(tags.filter((tag, index) => index !== i));
+        setTags(tags.filter((_, index) => index !== i));
     };
 
     const handleAddition = (tag: any) => {
